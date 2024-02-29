@@ -1,0 +1,84 @@
+/************************************* HEADER *********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+.header {
+    display: flex;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+#menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0b68d3;
+    transition: left 0.3s ease;
+    width: 100%;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu li {
+    padding: 15px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#menu li a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-weight: 800;
+}
+
+#burger-toggle{
+    display: none;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#burger-toggle:checked ~ #menu {
+    left: 0;
+}
+
+img {
+    padding: 0;
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+}
