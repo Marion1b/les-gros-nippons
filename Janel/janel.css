@@ -166,7 +166,9 @@ h1 {
 
 footer {
     text-align: left;
-    background-image: url("drapeaujap.jpg");
+    width: 100%;
+    background-size: cover;
+    background-image: url("./img/drapeaujap.jpg");
     background-color: transparent;
     color: #000000;
     padding: 10px;
