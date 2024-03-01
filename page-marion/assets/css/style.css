@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+/************************************* HEADER *********************************************/
+
+.header {
+    display: flex;
+    background-color: #457EAC;
+    margin: 0;
+    z-index: 5;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menu {
+    position: fixed;
+    top: 70px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: lightgrey;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#burger-toggle:checked ~ #menu {
+    left: 0;
+}
+#burger-toggle {
+    display: none;
+}
+
+header img {
+    padding: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+}
+
+/*page marion*/
+.page-marion{
+    background: linear-gradient(#6096BA,#b8d8f1, #fff);
+    font-family: 'Roboto sans', sans-serif;
+    padding: 60px;
+    z-index: 1;
+}
+.marion-curseur img{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.page-marion section{
+    max-width: 800px;
+    margin: auto;
+}
+
+.page-marion h2{
+    font-size: 32px;
+}
+
+.page-marion h2, .page-marion h3{
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.marion-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marion-profile img{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: #000 solid 2px;
+}
+
+.marion-portrait-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.marion-portrait-chinois p{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-width: 100px;
+    max-width: 200px;
+    border: #000 3px solid;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    box-shadow: 5px 5px 5px #0000008a;
+    transition: all 400ms;
+}
+
+.marion-portrait-chinois p:nth-child(1){
+    background-image: url("../img/guitare.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(2){
+    background-image: url("../img/zelda.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(3){
+    background-image: url("../img/superstore.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(4){
+    background-image: url("../img/juice.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(5){
+    background-image: url("../img/autumn.jpg");
+}
+
+.marion-portrait-chinois p:hover{
+    color: #000;
+    background: transparent;
+}
+
+.marion-about{
+    font-style: italic;
+}
+
+.marion-no-italic{
+    font-style: normal;
+}
+
+/* footer*/
+
+footer {
+    text-align: left;
+    background-image: url("../img/drapeaujap.jpg");
+    background-size: cover;
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+}
+
+.nous {
+    float: left;
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: hiragana-iroha;
+}
+
+.prenom {
+    font-size: 18px;
+    text-decoration: bold;
+
+}
+
+.bloc div {
+/*    border: solid black 2px;*/
+    display: inline-block;
+}
+
+.bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+#scrollToTopBtn {
+    position: relative;
+    left: 40px;
+    font-size: 16px;
+    padding: 2px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logopika {
+    width: 300px;
+    height: 300px;
+}
