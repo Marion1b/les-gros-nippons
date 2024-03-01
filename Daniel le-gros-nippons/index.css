@@ -19,6 +19,7 @@ main{
 }
 
 a{
+    background-color: white;
     font-size: 2rem;
     font-family: "Roboto Mono";
     border:5px solid yellow;
@@ -29,13 +30,13 @@ a{
 section{
     text-align: center;
     margin: 50px;
-    padding: 30px;
+    /* padding: 30px; */
     border: 5px solid blue;
 }
 
 article{
     margin: 50px;
-    padding: 40px;
+    padding: 100px;
     border:5px solid orange;
 }
 
@@ -43,4 +44,32 @@ article{
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.Marion{
+    background-image: url('./imageFond/image-de-fond-marion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Killian{
+    background-image: url('./imageFond/image-de-fond-killian.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Daniel{
+    background-image: url('./imageFond/image-de-fond-daniel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Janel{
+    background-image: url('./imageFond/image-de-fond-janel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
