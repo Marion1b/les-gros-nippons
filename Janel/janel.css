@@ -162,3 +162,61 @@ h1 {
     margin: auto;
 }
 
+/************************************* FOOTER *********************************************/
+
+footer {
+    text-align: left;
+    background-image: url("drapeaujap.jpg");
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+}
+
+.nous {
+    float: left;
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: hiragana-iroha;
+}
+
+.prenom {
+    font-size: 18px;
+    text-decoration: bold;
+
+}
+
+.bloc div {
+/*    border: solid black 2px;*/
+    display: inline-block;
+}
+
+.bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+
+
+#scrollToTopBtn {
+    position: relative;
+    left: 40px;
+    font-size: 16px;
+    padding: 2px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.logopika {
+    width: 300px;
+    height: 300px;
+}
