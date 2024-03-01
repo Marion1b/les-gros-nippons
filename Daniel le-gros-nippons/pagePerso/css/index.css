@@ -1,0 +1,214 @@
+* {
+    font-weight: bold;
+}/************************************* HEADER *********************************************/
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    background-color: #457EAC;
+    margin: 0;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menu {
+    z-index: 5;
+    position: fixed;
+    top: 80px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: lightgrey;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#burger-toggle:checked ~ #menu {
+    left: 0;
+}
+#burger-toggle {
+    display: none;
+}
+
+header img {
+    padding: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+/***************************************fin du header*****************/
+/***************************************main***************************/
+section {
+    /* border: 5px solid blue; */
+    margin: 10px;
+}
+
+main {
+    background-image: url('../image/fond-perso.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article {
+    
+    /* border: 5px solid red; */
+    padding: 5px;
+    margin: 10px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* article div {
+    border: 5px solid greenyellow;
+} */
+
+.part2 {
+    display: flex;
+}
+
+.descr {
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+div.opac{
+    background-color: white;
+    opacity: 0.6;
+    padding: 2px;
+    margin: 20px;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p{
+    font-family: "Roboto Mono"
+}
+
+.intro{
+    display: flex;
+}
+
+/******************************fin du main**********************/
+/******************************Footer*******************************/
+
+footer {
+    text-align: left;
+    background-image: url("/les-gros-nippons/Kiki/assets/drapeaujap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+}
+
+.nous {
+    float: left;
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: hiragana-iroha;
+}
+
+.prenom {
+    font-size: 18px;
+    text-decoration: bold;
+
+}
+
+.bloc div {
+/*    border: solid black 2px;*/
+    display: inline-block;
+}
+
+.bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+}
+#scrollToTopBtn {
+    position: relative;
+    left: 40px;
+    font-size: 16px;
+    padding: 2px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logopika {
+    width: 300px;
+    height: 300px;
+}
