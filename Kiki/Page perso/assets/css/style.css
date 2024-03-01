@@ -1,0 +1,220 @@
+html {
+    cursor: url("puck.png"), auto;
+}
+
+/************************************* HEADER *********************************************/
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    background-color: #457EAC;
+    margin: 0;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menu {
+    position: fixed;
+    top: 80px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: lightgrey;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-toggle:checked + #burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#burger-toggle:checked ~ #menu {
+    left: 0;
+}
+#burger-toggle {
+    display: none;
+}
+
+
+#pikasamourai {
+    padding: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logoheader {
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: white;
+}
+
+
+/*************************************************** FOOTER ************************************************************/
+
+footer {
+    text-align: left;
+    background-image: url("drapeaujap.jpg");
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+}
+
+.nous {
+    float: left;
+    font-family: "Roboto Mono";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: hiragana-iroha;
+}
+
+.prenom {
+    font-size: 18px;
+    text-decoration: bold;
+
+}
+
+.bloc div {
+/*    border: solid black 2px;*/
+    display: inline-block;
+}
+
+.bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+
+
+#scrollToTopBtn {
+    position: relative;
+    left: 40px;
+    font-size: 16px;
+    padding: 2px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.logopika {
+    width: 300px;
+    height: 300px;
+}
+
+
+/******************************************************* MAIN *****************************************************/
+
+.conteneurinfos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+.infospersos {
+    float: left;
+}
+
+.interview {
+    background-color: #fff2cc;
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+
+.scottgomez {
+    padding-left: 40px;
+    margin: 10px;
+    width: 180px;
+    height: 250px;
+}
+
+.hockeyeur {
+    display: inline-block;
+}
+
+.imgcontainer {
+    display: inline-block;
+    padding: 10px;
+}
+
+.rocketleague {
+    width: 350px;
+    height: 220px;
+    margin: 10px;
+}
+
+.john5 {
+    width: 350px;
+    height: 220px;
+    margin: 10px;
+}
+
+.portraitchinois {
+    text-align: center;
+    box-shadow: 10px 5px 5px red;
+    width: 30%;
+    background-color: yellow;
+    font-family: "Roboto Mono";
+}
+
+.listeportrait {
+    box-shadow: 10px 5px 5px yellow;
+    background-color: red;
+    font-family: "Roboto Mono";
+}
