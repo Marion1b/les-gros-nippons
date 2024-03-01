@@ -4,38 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Projet Groupe</title>
-    <link rel="stylesheet" href="header.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
 <body>
     <header class="header">
         <input type="checkbox" id="burger-toggle">
         <label for="burger-toggle" id="burger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav id="menu">
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Nippon Marion</a></li>
+                <li><a href="#">Nippon Daniel</a></li>
+                <li><a href="#">Nippon Killian</a></li>
+                <li><a href="#">Nippon Janel</a></li>
             </ul>
         </nav>
-        <div><img src="./img/Logo-sans-nom.png" /></div>
+        <div class="logo"><img src="assets/img/Logo.png" />
+            <h1>Les Gros Nippons</h1>
+        </div>
     </header>
 
-    <main>
-
+    <main class="home-page">
+        <section class="home-page__section">
+            
+            <article class="clickage Killian">
+                
+            <div>
+                <a class="font" href="">Voici Kilian</a>
+            </div>
+            
+            </article>
+        
+        </section>
+        
+        <section class="home-page__section">
+        
+            <article class="clickage Janel">
+                
+            <div><a href="">Voici Janel</a></div>
+            
+            </article>
+        
+        </section>
+        
+        <section class="home-page__section">
+            
+            <article class="clickage Marion">
+                
+            <div><a href="">Voici Marion</a></div>
+            
+            </article>
+            
+        </section>
+        
+        <section class="home-page__section">
+            
+            <article class="clickage Daniel">
+                
+            <div><a href="">Voici Daniel</a></div>
+            
+            </article>
+        
+        </section>
+        <div class="container-note">
+            <p>Laissez nous une note :</p>
+            <p class="js-number-display">0</p>
+            <input class="js-number-input" type="range" min="0" max="10" value="4" step="0.5">
+        </div>
     </main>
 
     <footer>
-
+        <div class="bloc">
+            <div class="nous">
+            LES GROS NIPPONS 
+            <ul>
+                <li class="prenom">Daniel</li>
+                <li class="prenom">Janel</li>
+                <li class="prenom">Kilian</li>
+                <li class="prenom">Marion</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img class="logopika" src="assets/img/Logo.png"></img>
+        </div>
+        <div class="bouton">
+            <button id="scrollToTopBtn">Revenir en haut</button>
+        </div>
+        </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
