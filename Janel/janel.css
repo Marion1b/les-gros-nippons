@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+}
+
+/************************************* HEADER *********************************************/
+
+.header {
+    display: flex;
+    background-color: #457EAC;
+    margin: 0;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menu {
+    position: fixed;
+    top: 80px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: lightgrey;
+}
+
+#burger-toggle:checked+#burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked+#burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-toggle:checked+#burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#burger-toggle:checked~#menu {
+    left: 0;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+.header img {
+    padding: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+
+/************************************* MAIN *********************************************/
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+
+.first .name {
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    overflow: hidden;
+}
+
+.photo {
+    width: 444px;
+    height: 444px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .8s;
+    
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .left {
+    float: left;
+}
+
+.second .left p {
+    background-color: #457EAC;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.second .right {
+    float: right;
+}
+
+.right img {
+    margin: auto;
+}
+
