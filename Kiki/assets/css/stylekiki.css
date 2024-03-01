@@ -1,7 +1,8 @@
 footer {
     text-align: left;
-    background-color: #d7bbf0;
-    color: #ca861b;
+    background-image: url("drapeaujap.jpg");
+    background-color: transparent;
+    color: #000000;
     padding: 10px;
 }
 
@@ -9,7 +10,11 @@ footer {
     float: left;
     font-family: roboto;
     font-size: 24px;
-    text-decoration: bold;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: hiragana-iroha;
 }
 
 .prenom {
@@ -38,7 +43,7 @@ footer {
     font-size: 16px;
     padding: 2px;
     border: none;
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
