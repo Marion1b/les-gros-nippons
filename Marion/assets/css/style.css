@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    font-family: "Roboto Mono", monospace;
 }
 
 /************************************* HEADER *********************************************/
@@ -10,6 +11,10 @@
     display: flex;
     background-color: #457EAC;
     margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:5;
 }
 
 #burger-icon {
@@ -36,6 +41,7 @@
     padding-top: 60px;
     transition: left 0.3s ease;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 }
 
 #menu ul {
@@ -100,12 +106,13 @@ h1 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .home-page a{
     background-color: white;
     font-size: 2rem;
-    font-family: "Roboto Mono";
     padding:15px;
     text-decoration: none;
     color: #000000;
@@ -132,12 +139,6 @@ h1 {
     box-shadow: 8px 8px 5px #1f1f1f;
 }
 
-.roboto-mono- {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 .Marion{
     background-image: url('../img/image-de-fond-marion.jpg');
     background-size: cover;
@@ -145,8 +146,8 @@ h1 {
     background-attachment: fixed;
 }
 
-.Killian{
-    background-image: url('../img/image-de-fond-killian.jpg');
+.Kilian{
+    background-image: url('../img/image-de-fond-kilian.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -174,9 +175,6 @@ h1 {
     padding: 20px;
     background-color: #ffffff80;
 }
-.container-note p{
-    font-family: 'Roboto', sans-serif;
-}
 input[type="range"] {
     font-size: 1.5rem;
     width: 12.5em;
@@ -190,7 +188,282 @@ input[type="range"]::-moz-range-track {
   background-color: #9a905d;
 }
 
+/*page marion*/
+.page-marion{
+    background: linear-gradient(#6096BA,#b8d8f1, #fff);
+    padding: 60px;
+    z-index: 1;
+}
+.marion-curseur img{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
 
+.page-marion section{
+    max-width: 800px;
+    margin: auto;
+}
+
+.page-marion h2{
+    font-size: 32px;
+}
+
+.page-marion h2, .page-marion h3{
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.marion-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marion-profile img{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: #000 solid 2px;
+}
+
+.marion-portrait-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.marion-portrait-chinois p{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-width: 100px;
+    max-width: 200px;
+    border: #000 3px solid;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    box-shadow: 5px 5px 5px #0000008a;
+    transition: all 400ms;
+}
+
+.marion-portrait-chinois p:nth-child(1){
+    background-image: url("../img/guitare.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(2){
+    background-image: url("../img/zelda.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(3){
+    background-image: url("../img/superstore.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(4){
+    background-image: url("../img/juice.jpg");
+}
+
+.marion-portrait-chinois p:nth-child(5){
+    background-image: url("../img/autumn.jpg");
+}
+
+.marion-portrait-chinois p:hover{
+    color: #000;
+    background: transparent;
+}
+
+.marion-about{
+    font-style: italic;
+}
+
+.marion-no-italic{
+    font-style: normal;
+}
+
+/*page daniel*/
+.daniel-page section {
+    margin: 10px;
+}
+
+.daniel-page {
+    background-image: url('../img/fond-perso.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:1;
+    margin-top: 100px;
+}
+
+.daniel-page article {
+    padding: 5px;
+    margin: 10px;
+}
+
+.daniel-page img{
+    width: 100%;
+    height: auto;
+}
+
+.daniel-page h1,
+.daniel-page h2 {
+    text-align: center;
+}
+
+.part2 {
+    display: flex;
+}
+
+.descr {
+    align-items: center;
+}
+
+.daniel-page ul li {
+    list-style: none;
+}
+
+div.opac{
+    background-color: white;
+    opacity: 0.6;
+    padding: 2px;
+    margin: 20px;
+}
+
+.daniel-page .intro{
+    display: flex;
+}
+
+/*page kilian*/
+/******************************************************* MAIN *****************************************************/
+.kilian-page{
+    cursor: url("puck.png"), auto;
+    margin-top: 100px;
+}
+
+.conteneurinfos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+.infospersos {
+    float: left;
+}
+
+.interview {
+    background-color: #fff2cc;
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+
+.scottgomez {
+    padding-left: 40px;
+    margin: 10px;
+    width: 180px;
+    height: 250px;
+}
+
+.hockeyeur {
+    display: inline-block;
+}
+
+.imgcontainer {
+    display: inline-block;
+    padding: 10px;
+}
+
+.rocketleague {
+    width: 350px;
+    height: 220px;
+    margin: 10px;
+}
+
+.john5 {
+    width: 350px;
+    height: 220px;
+    margin: 10px;
+}
+
+.portraitchinois {
+    text-align: center;
+    box-shadow: 10px 5px 5px red;
+    width: 30%;
+    background-color: yellow;
+}
+
+.listeportrait {
+    box-shadow: 10px 5px 5px yellow;
+    background-color: red;
+}
+
+/*page janel*/
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 10px 10px 10px;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+
+.first .name {
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    overflow: hidden;
+}
+
+.photo {
+    width: 444px;
+    height: 444px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .8s;
+    
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .left {
+    float: left;
+}
+
+.second .left p {
+    background-color: #457EAC;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.second .right {
+    float: right;
+}
+
+.right img {
+    margin: auto;
+}
 
 /* footer*/
 
@@ -205,13 +478,17 @@ footer {
 
 .nous {
     float: left;
-    font-family: 'roboto', sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-footer ul {
+footer ol {
     list-style-type: hiragana-iroha;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000000;
 }
 
 .prenom {
